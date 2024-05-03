@@ -75,7 +75,7 @@ function App() {
         {weather && weather.data && weather.data.main && (
           <div>
             <div className="city-name font-semibold text-3xl">
-              <h2>
+              <h2 className="pt-2">
                 {weather.data.name}, <span>{weather.data.sys.country}</span>
               </h2>
             </div>

@@ -34,7 +34,7 @@ state-----> const array = useState(0) ----> const [array] = useState(0)
 
 interface si usa in TS --->da li possiamo far passare i dati dai props
 
-useEffect  --->
+useEffect  ---> si usa co le API
 
 chiamate http ----> endpoint è l'URL
 per cancellare un post/elemento ---> method:'DELETE'
@@ -53,3 +53,58 @@ useDispatch ----> per modificare lo stato
 
 hooks--->sono questi useEffect, useState, useSelector ecc c'è sempre use davanti
 custom hooks ----->
+
+
+
+USE STATE:
+QUANDO è 0 SI USA PER I COUNT E ROBE SIMILI,
+QUANDO è UN ARRAY SI USA PER UNA LISTA DI COSE TIPO "COSA", "SASSO", "MASSO", ECC.
+QUANDO è UN OGGETTO SI USA PER GLI USER E PROPS ECC.
+QUANDO è "" SI USA PER DIRE CHE è VUOTO
+QUANDO è FALSE SI USA PER GESTIRE UN BOOLEANO
+
+
+USE EFFECT: 
+useEffect(() => {
+  // codice da eseguire quando è attivato l'effetto
+}, [dependencies]);
+
+SI PUò ANCHE ---> Recuperare i dati da un’API esterna
+
+useEffect(() => {
+  // Recupera i dati da un'API esterna
+  fetch('https://api.example.com/data')
+	.then((response) => response.json())
+	.then((data) => {
+  	// Fa qualcosa con i dati
+	});
+}, []);
+
+await ---> async function wait for a promise
+async ---> funzione ritorna una promise
+promise ----> un oggetto che gestisce le operazioni di asynch
+
+let promise = new Promise(function(resolve, reject) {
+	//code
+});
+
+resolve == value,
+reject == error,
+    Pending (in attesa): stato iniziale, prima che la Promise abbia successo o fallisca
+    Resolved (risolta): Promise completata
+    ---> l metodo then() viene chiamato dopo che la Promise è risolta
+
+    Rejected (rifiutata): Promise fallita
+    ---> se la Promise viene rifiutata, salteremo al metodo catch()
+
+
+
+
+    TYPESCRIPT
+
+    bisogna sempre specificare il tipo di dati/variabili e dopo scrivere tutti i valori del casso
+    interface è molto meglio di types
+    interface ----> utilizzate per definire la struttura degli oggetti, assicurandosi che abbiano un determinato insieme di proprietà o metodi.
+    <T> ---> parametro
+
+    
